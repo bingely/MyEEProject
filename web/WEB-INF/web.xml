@@ -3,4 +3,15 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
+    <!--这个相当于声明servlet-->
+    <servlet>
+        <servlet-name>MyFirstServlet</servlet-name>
+        <servlet-class>com.bingley.servlet.MyFirstServlet</servlet-class>
+    </servlet>
+
+    <!--url-pattern（servlet对外访问路径）命名规则是什么？-->
+    <servlet-mapping>
+        <servlet-name>MyFirstServlet</servlet-name>
+        <url-pattern>/servlet/MyFirstServlet</url-pattern>
+    </servlet-mapping>
 </web-app>
