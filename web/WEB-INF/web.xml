@@ -7,11 +7,12 @@
     <!--与下面是一对多的关系-->
     <servlet>
         <servlet-name>MyFirstServlet</servlet-name>
-        <servlet-class>com.bingley.servlet.MyFirstServlet</servlet-class>
+        <servlet-class>com.bingley.ee.servlet.MyFirstServlet</servlet-class>
     </servlet>
     <!--url-pattern（servlet对外访问路径）命名规则是什么？-->
     <servlet-mapping>
         <servlet-name>MyFirstServlet</servlet-name>
         <url-pattern>/servlet/MyFirstServlet</url-pattern>
     </servlet-mapping>
+
 </web-app>

@@ -1,4 +1,4 @@
-package com.bingley.servlet;
+package com.bingley.ee.servlet;
 
 import java.io.IOException;
 import java.util.Date;
@@ -15,10 +15,9 @@ import javax.servlet.http.HttpServletResponse;
  * @des 要理解从零建servlet过程
  * @since 2017/5/18.
  */
+
 @WebServlet(name = "MyFirstServlet")
 public class MyFirstServlet extends HttpServlet {
-
-
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // 这是一种多态思想调用
