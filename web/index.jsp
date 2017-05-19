@@ -8,9 +8,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
-    <title>$Title$</title>
+    <title>主页</title>
   </head>
   <body>
-    helloworld
+    helloworld   这是index.jsp
   </body>
 </html>
