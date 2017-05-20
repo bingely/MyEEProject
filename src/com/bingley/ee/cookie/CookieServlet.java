@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * @author Mr.bingley
  * @version 1.0.0
- * @des $des$
+ * @des cookie快速入门
  * @since 2017/5/20.
  */
 // http 相关信息可以在fiddler中去查询
