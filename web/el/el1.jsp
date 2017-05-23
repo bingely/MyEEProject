@@ -18,13 +18,15 @@
     <h1>获取javabean的属性</h1>
     <hr>
     <%
-        Book p = new Book();
-        p.setName("芙蓉姐姐");
-        p.setAuth("bingely");
-        pageContext.setAttribute("p", p);
+        Book bookData = new Book();
+        bookData.setName("芙蓉姐姐");
+        bookData.setAuth("bingely");
+        pageContext.setAttribute("book", bookData);
     %>
-    ${p.name }${p.age } ${p.name }
-    <img src="${pageContext.request.contextPath }/1.jpg"/>
+    ${book.name }
+    ${book.age }
+
+    <img src="${pageContext.request.contextPath }/1.png"/>
 
     <h1>获取Map中的数据</h1>
     <hr>
