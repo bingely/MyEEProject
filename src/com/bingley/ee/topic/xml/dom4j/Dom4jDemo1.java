@@ -9,7 +9,7 @@ public class Dom4jDemo1 {
 		//1.获取解析器
 		SAXReader reader = new SAXReader();
 		//2.解析xml获取代表整个文档的dom对象
-		Document dom = reader.read("book.xml");
+		Document dom = reader.read("E:\\MyEEProject\\web\\book.xml");
 		//3.获取根节点
 		Element root = dom.getRootElement();
 		//4.获取书名进行打印
