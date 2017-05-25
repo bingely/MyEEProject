@@ -1,4 +1,4 @@
-package com.bingley.ee.response;
+package com.bingley.ee.topic.response;
 
 import java.io.IOException;
 

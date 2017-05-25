@@ -1,4 +1,4 @@
-package com.bingley.ee.session;
+package com.bingley.ee.topic.session;
 
 import java.io.IOException;
 

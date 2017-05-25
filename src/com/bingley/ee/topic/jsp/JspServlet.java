@@ -1,4 +1,4 @@
-package com.bingley.ee.jsp;
+package com.bingley.ee.topic.jsp;
 
 import java.io.IOException;
 

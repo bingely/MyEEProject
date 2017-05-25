@@ -1,9 +1,8 @@
-package com.bingley.ee.servlet;
-
-import com.bingley.ee.service.ServiceTest;
+package com.bingley.ee.topic.servlet;
 
 import java.io.IOException;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -13,17 +12,17 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * @author Mr.bingley
  * @version 1.0.0
- * @des $des$
+ * @des ServletContext实现请求转发
  * @since 2017/5/18.
  */
-@WebServlet(name = "ClassLoadResourceServlet",value = "/helloclassload")
-public class ClassLoadResourceServlet extends HttpServlet {
+@WebServlet(name = "RequestForwardServlet",value = "/hellforward")
+public class RequestForwardServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        doGet(request,response);
+        RequestDispatcher requestDispatcher = this.getServletContext().getRequestDispatcher("/testwebxml");
+        requestDispatcher.forward(request,response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        ServiceTest service = new ServiceTest();
-        service.methdo1();
+        doPost(request,response);
     }
 }

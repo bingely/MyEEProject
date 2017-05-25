@@ -1,4 +1,4 @@
-package com.bingley.ee.servlet;
+package com.bingley.ee.topic.servlet;
 
 import java.io.IOException;
 import java.util.Enumeration;

@@ -1,4 +1,4 @@
-package com.bingley.ee.cookie.example;
+package com.bingley.ee.topic.cookie.example;
 
 import com.bingley.ee.domain.Book;
 

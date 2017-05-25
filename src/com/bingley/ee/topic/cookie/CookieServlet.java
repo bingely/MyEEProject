@@ -1,4 +1,4 @@
-package com.bingley.ee.cookie;
+package com.bingley.ee.topic.cookie;
 
 import java.io.IOException;
 import java.util.Date;
