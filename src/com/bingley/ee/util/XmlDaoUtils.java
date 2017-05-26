@@ -15,7 +15,7 @@ import org.dom4j.io.XMLWriter;
  */
 public class XmlDaoUtils {
 	private static Document dom = null;
-	// xml 路径 TODO
+	// xml 路径(通过类加载器加载的方式得到） TODO
 	private static String path = XmlDaoUtils.class.getClassLoader().getResource("users.xml").getPath();
 
 	private XmlDaoUtils() {
