@@ -20,4 +20,11 @@
         <url-pattern>/servlet/MyFirstServlet</url-pattern>
     </servlet-mapping>
 
+    <!--配置网站的默认启动的jsp
+
+
+     -->
+   <welcome-file-list>
+        <welcome-file>/user/index.jsp</welcome-file>
+    </welcome-file-list>
 </web-app>
