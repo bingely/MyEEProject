@@ -5,9 +5,9 @@
   </head>
   <body>
   <%request.getRequestDispatcher("/include/head.jsp").include(request,response); %>
-  	<%--@include file="/include/head.jsp" --%>
+  	<%--@include upload="/include/head.jsp" --%>
   	from body.....
-  	<%--@include file="/include/head.jsp" --%>
+  	<%--@include upload="/include/head.jsp" --%>
   	<%request.getRequestDispatcher("/include/foot.jsp").include(request,response); %>
   </body>
 </html>
