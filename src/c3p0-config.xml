@@ -7,7 +7,7 @@
     <property name="password">root</property>
   </default-config>
 
-  <!--如何读取下面的两个配置-->
+  <!--如何读取下面的两个配置  com.bingley.ee.topic.sql.jdbc.C3P0Demo 有写-->
   <named-config name="aaa"> 
     <property name="driverClass">com.mysql.jdbc.Driver</property>
     <property name="jdbcUrl">jdbc:mysql:///jdbc</property>
