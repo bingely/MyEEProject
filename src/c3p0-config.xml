@@ -2,10 +2,12 @@
 <c3p0-config>
   <default-config>
     <property name="driverClass">com.mysql.jdbc.Driver</property>
-    <property name="jdbcUrl">jdbc:mysql:///jdbc</property>
+    <property name="jdbcUrl">jdbc:mysql:///jdbc?generateSimpleParameterMetadata=true</property>
     <property name="user">root</property>
     <property name="password">root</property>
   </default-config>
+
+  <!--如何读取下面的两个配置-->
   <named-config name="aaa"> 
     <property name="driverClass">com.mysql.jdbc.Driver</property>
     <property name="jdbcUrl">jdbc:mysql:///jdbc</property>
