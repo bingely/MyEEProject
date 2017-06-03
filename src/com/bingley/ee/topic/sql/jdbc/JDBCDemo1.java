@@ -1,4 +1,4 @@
-package com.bingley.ee.topic.jdbc;
+package com.bingley.ee.topic.sql.jdbc;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -9,7 +9,7 @@ import java.sql.Statement;
 /**
  * @author Mr.bingley
  * @version 1.0.0
- * @des jdbc 快速入门
+ * @des sql 快速入门 （最原始的写法）
  * @since 2017/6/1.
  */
 
@@ -25,8 +25,8 @@ public class JDBCDemo1 {
             //--创建MySql的Driver对象时,导致了程序和具体的Mysql驱动绑死在了一起,在切换数据库时需要改动java代码
             //DriverManager.registerDriver(new Driver());
             Class.forName("com.mysql.jdbc.Driver");
-            //2.获取数据库连接 (jdbc:mysql://localhost:3306/jdbc 因為是默認值，所以可以省略）
-            conn = DriverManager.getConnection("jdbc:mysql:///jdbc?user=root&password=root");
+            //2.获取数据库连接 (sql:mysql://localhost:3306/sql 因為是默認值，所以可以省略）
+            conn = DriverManager.getConnection("sql:mysql:///sql?user=root&password=root");
             //3.获取传输器对象
             stat = conn.createStatement();
             //4.利用传输器传输sql语句到数据库中执行,获取结果集对象

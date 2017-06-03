@@ -1,4 +1,4 @@
-package com.bingley.ee.topic.jdbc;
+package com.bingley.ee.topic.sql.jdbc;
 
 
 import com.bingley.ee.util.JDBCUtils;
