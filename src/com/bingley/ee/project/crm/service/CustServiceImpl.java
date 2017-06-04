@@ -25,6 +25,8 @@ public class CustServiceImpl implements CustService {
     public void addCust(Cust cust) {
         //1.检查用户名是否已经存在
         if (dao.findUserByName(cust.getName()) != null) {
+            // 这里没有通过自定义的exception方式向外展示错误信息
+            // 而是通过rumtimeException ,向错误页面500.jsp 400.jsp 输出exception信息。
             throw new RuntimeException("用户名已经存在");
         }
         //2.调用dao中的方法增加用户
